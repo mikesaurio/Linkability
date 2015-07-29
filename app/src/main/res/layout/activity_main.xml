@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@color/color_background">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_whats_new"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:background="@color/color_red"
+                android:textColor="@color/color_blue"
+                android:text="Messages"
+                android:textSize="40sp"/>
+
+            <Button
+                android:id="@+id/btn_back_notice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:background="@color/color_blue"
+                android:textColor="@color/color_red"
+                android:text="BACK"
+                android:textSize="40sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:background="@color/color_yellow"
+                android:textColor="@color/color_green"
+                android:text="CALL"
+                android:textSize="40sp"
+                />
+
+            <Button
+                android:id="@+id/btn_next_notice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:background="@color/color_green"
+                android:textColor="@color/color_yellow"
+                android:text="NEXT"
+                android:textSize="40sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
